@@ -1,0 +1,28 @@
+flowchart LR
+  subgraph Customer
+    A([Start in app]) --> B[Enter mobile and OTP]
+    B --> C[Fill personal details]
+    C --> D[Enter PAN]
+    S[Book a VKYC slot]:::new
+    R[Get reminder 15 min before]:::new
+    X[Leave and resume later]:::new
+  end
+  subgraph System
+    D --> E{PAN name matches?}
+    E -- No --> P[Show how to fix the name]:::new
+    P --> D
+    E -- Yes --> F[Aadhaar eKYC OTP]
+    F --> S
+    S --> R
+    X -. saved progress .-> F
+  end
+  subgraph VKYC_Agent[Video KYC agent]
+    R --> H{Call OK?}
+    H -- Network weak --> LB[Low-bandwidth mode]:::new
+    LB --> H
+    H -- Missed --> S
+    H -- Approved --> I[Nominee and preferences]
+  end
+  I --> J[First deposit]
+  J --> K([Account active])
+  classDef new fill:#d4edda,stroke:#1e7e34;

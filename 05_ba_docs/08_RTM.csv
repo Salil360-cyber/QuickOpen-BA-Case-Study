@@ -1,0 +1,8 @@
+Req ID,Business requirement,User stories,Test cases,Priority,Status
+BR-01,Customers can book a Video KYC slot,US-01,TC-01;TC-02,Must,Draft
+BR-02,Customers are reminded before their Video KYC slot,US-02,TC-03,Must,Draft
+BR-03,Customers can rebook or reschedule a Video KYC call,US-03;US-04,TC-04;TC-05,Must,Draft
+BR-04,Operations can see and control slot capacity,US-05;US-06,TC-06,Should,Draft
+BR-05,Customers can resume the journey from their last step,US-07;US-08,TC-07,Should,Draft
+BR-06,Video KYC works on weak networks,US-09,TC-08,Could,Draft
+BR-07,Customers get guidance on PAN name mismatch,US-10,TC-09,Could,Draft

@@ -1,0 +1,13 @@
+Issue Type,Summary,Epic Link,Priority,Story Points,Sprint,Acceptance Criteria
+Epic,Video KYC experience,,High,,,
+Epic,Journey recovery,,Medium,,,
+Story,US-01 Book a Video KYC slot,Video KYC experience,Highest,5,Sprint 1,See 05_ba_docs/07_user_stories.md
+Story,US-02 Reminder before Video KYC call,Video KYC experience,Highest,3,Sprint 1,See 05_ba_docs/07_user_stories.md
+Story,US-03 Rebook a missed call,Video KYC experience,Highest,3,Sprint 1,See 05_ba_docs/07_user_stories.md
+Story,US-04 Reschedule a slot,Video KYC experience,High,2,Sprint 1,See 05_ba_docs/07_user_stories.md
+Story,US-05 Ops view of booked slots,Video KYC experience,Medium,3,Sprint 2,See 05_ba_docs/07_user_stories.md
+Story,US-06 Admin slot capacity,Video KYC experience,Medium,3,Sprint 2,See 05_ba_docs/07_user_stories.md
+Story,US-07 Save and resume journey,Journey recovery,Medium,8,Sprint 2,See 05_ba_docs/07_user_stories.md
+Story,US-08 Progress bar,Journey recovery,Medium,2,Sprint 2,See 05_ba_docs/07_user_stories.md
+Story,US-09 Low-bandwidth Video KYC,Video KYC experience,Low,8,Backlog,See 05_ba_docs/07_user_stories.md
+Story,US-10 PAN name-mismatch guidance,Journey recovery,Low,3,Backlog,See 05_ba_docs/07_user_stories.md

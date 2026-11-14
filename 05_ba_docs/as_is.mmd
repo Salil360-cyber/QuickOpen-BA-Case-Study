@@ -1,0 +1,24 @@
+flowchart LR
+  subgraph Customer
+    A([Start in app]) --> B[Enter mobile and OTP]
+    B --> C[Fill personal details]
+    C --> D[Enter PAN]
+    F2[Wait in VKYC queue]
+    L([Leaves journey]):::bad
+  end
+  subgraph System
+    D --> E{PAN name matches?}
+    E -- No --> L
+    E -- Yes --> F[Aadhaar eKYC OTP]
+    F --> F2
+  end
+  subgraph VKYC_Agent[Video KYC agent]
+    F2 --> G{Agent free?}
+    G -- No, long wait --> L
+    G -- Yes --> H{Call OK?}
+    H -- Network / no-show --> L
+    H -- Approved --> I[Nominee and preferences]
+  end
+  I --> J[First deposit]
+  J --> K([Account active])
+  classDef bad fill:#f8d7da,stroke:#c0392b;

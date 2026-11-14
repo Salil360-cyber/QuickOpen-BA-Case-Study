@@ -2,9 +2,9 @@
 
 Both files are **synthetic** (generated for practice). Sahyadri Bank is a fictional bank.
 
-## applications_raw.csv (20,150 rows)
+## applications_raw.csv (20,150 rows) and applications_clean.csv (20,000 rows)
 
-One row per account-opening application, April to September 2026. The raw file deliberately contains data-quality issues for the cleaning step: 150 duplicate rows, inconsistent `channel` spellings and spaces, and 180 blank `city_tier` values.
+One row per account-opening application, April to September 2026. The raw file deliberately contains data-quality issues for the cleaning step: 150 duplicate rows, inconsistent `channel` spellings and spaces, and 180 blank `city_tier` values. `applications_clean.csv` has these fixed: duplicates removed, `channel` standardised to Android / iOS / Web, blank `city_tier` set to `Unknown`.
 
 | Column | Meaning |
 | --- | --- |
